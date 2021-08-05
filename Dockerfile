@@ -4,6 +4,7 @@ FROM hotio/sabnzbd:latest
 RUN apk add --no-cache ffmpeg curl wget git
 
 # create scripts directory
+RUN mkdir /scripts
 RUN mkdir /scripts/sabnzbd
 
 # install nzbToMedia
